@@ -15,12 +15,15 @@ body{
 }
 
 .serverimg{
-    
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .serverimg img{
-    width: 100%;
-    height: auto;
+    width: 60%;
+    height: auto;  
+    margin: auto;  
 }
 
 .button_container{
@@ -53,4 +56,46 @@ body{
 a{
     color: inherit;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1600px) {
+
+    .serverimg img{
+        width: 70%;
+    }
+
+    .button{
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+
+    .serverimg img{
+        width: 90%;
+    }
+
+    .button{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+
+    .serverimg img{
+        width: 100%;
+    }
+
+    .button_container
+    {
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+    }
+
+    .button{
+        font-size: 30px;
+    }
+    
 }
