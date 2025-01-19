@@ -79,10 +79,14 @@ a{
     .button{
         font-size: 25px;
     }
+
+    .button_container{
+        width: 90%;
+    }
     
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 930px) {
 
     .serverimg img{
         width: 100%;
@@ -92,6 +96,7 @@ a{
     {
         grid-template-columns: repeat(1,1fr);
         gap: 2rem;
+        width: 100%;
     }
 
     .button{
